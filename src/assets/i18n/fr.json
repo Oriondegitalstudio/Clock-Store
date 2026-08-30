@@ -1,0 +1,29 @@
+{
+  "navbar": {
+    "home": "accueil",
+    "shop": "notre boutique",
+    "collections": "collections",
+    "about": "à propos",
+    "contact": "contact",
+    "wishlist": "Liste de souhaits",
+    "account": "Compte"
+  },
+  "common": {
+    "search": "rechercher",
+    "cart": "panier",
+    "menu": "menu",
+    "searchPlaceholder": "Rechercher votre montre..."
+  },
+  "footer": {
+    "pages": "Pages",
+    "company": "Entreprise",
+    "support": "Support",
+    "shipping": "Livraison",
+    "faq": "FAQ",
+    "privacy": "Politique de confidentialité",
+    "brand": "Découvrez l’élégance intemporelle d’Aurelis. Des garde-temps soigneusement sélectionnés pour apporter sophistication et raffinement à chaque instant.",
+    "connect": "Suivez-nous",
+    "connectText": "Suivez Aurelis et découvrez nos dernières pièces et collections.",
+    "language": "Langue"
+  }
+}
