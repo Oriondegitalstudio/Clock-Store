@@ -1,0 +1,29 @@
+{
+  "navbar": {
+    "home": "home",
+    "shop": "our store",
+    "collections": "collections",
+    "about": "about",
+    "contact": "contact",
+    "wishlist": "Wishlist",
+    "account": "Account"
+  },
+  "common": {
+    "search": "search",
+    "cart": "cart",
+    "menu": "menu",
+    "searchPlaceholder": "Search for your watch..."
+  },
+    "footer":{
+    "pages":"Pages",
+    "company":"Company",
+    "support":"Support",
+    "shipping": "Shipping",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "brand":"Discover timeless elegance with Aurelis. Carefully selected timepieces designed to bring sophistication to every moment.",
+    "connect": "Connect",
+    "connectText": "Follow Aurelis and discover our latest timepieces and collections.",
+    "language": "Language"
+  }
+}
