@@ -3,4 +3,5 @@ export enum imagePath{
     en = "assets/icons/en.svg",
     fr = "assets/icons/fr.svg",
     ar = "assets/icons/ar.svg",
+    hero = "assets/images/watch.webp",
 }
