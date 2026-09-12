@@ -1,0 +1,30 @@
+<div class="w-full" [class.text-left]="align() === 'left'" [class.text-center]="align() === 'center'">
+    <!-- Eyebrow -->
+    @if (eyebrow()) {
+    <span class="mb-3 block font-poppins text-[11px] sm:text-xs font-medium uppercase tracking-[0.22em]" [class.text-gold]="eyebrowColor() === 'gold'"
+        [class.text-black]="eyebrowColor() === 'black'" [class.text-text-muted]="eyebrowColor() === 'muted'">
+        {{ eyebrow() }}
+    </span>
+    }
+
+    <!-- Title -->
+    <h2 class="font-display font-medium leading-[1.05]
+           tracking-[-0.02em] text-text" [class.text-3xl]="titleSize() === 'sm'"
+        [class.sm:text-4xl]="titleSize() === 'sm'" [class.text-4xl]="titleSize() === 'md'"
+        [class.sm:text-5xl]="titleSize() === 'md'" [class.text-5xl]="titleSize() === 'lg'"
+        [class.sm:text-6xl]="titleSize() === 'lg'" [class.lg:text-7xl]="titleSize() === 'lg'"
+        [class.text-6xl]="titleSize() === 'xl'" [class.sm:text-7xl]="titleSize() === 'xl'"
+        [class.lg:text-8xl]="titleSize() === 'xl'">
+        {{ title() }}
+    </h2>
+
+    <!-- Description -->
+    @if (description()) {
+    <p class="mt-5 max-w-2xl
+             font-sans text-sm sm:text-base
+             leading-7 text-text-muted" [class.mx-auto]="align() === 'center'">
+        {{ description() }}
+    </p>
+    }
+
+</div>

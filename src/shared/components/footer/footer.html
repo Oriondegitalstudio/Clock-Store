@@ -1,0 +1,67 @@
+<footer class="w-full bg-transparent z-50 px-6 md:px-8 lg:px-10 pt-10 md:pt-12 border-t border-beige">
+    <div class="w-full max-w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 items-start justify-around gap-10 lg:gap-16 2xl:gap-20">
+        <div class="flex flex-col items-start gap-3">
+            <div class="shrink-0">
+                <img [src]="imagePath.logo" alt="Aurelis logo" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 object-contain" />
+            </div>
+            <p class="font-poppins text-text-muted font-normal text-sm xl:text-base leading-relaxed">
+                {{'footer.brand'|translate}}
+            </p>
+        </div>
+        <div class="flex flex-col items-start gap-3">
+            <h2 class="font-display text-2xl text-gold mb-1"> {{'footer.pages'|translate}} </h2>
+                <a *ngFor="let l of links" [routerLink]="l.link" routerLinkActive="text-gold"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    class="relative font-poppins capitalize font-normal text-sm xl:text-base whitespace-nowrap transition-colors duration-300">
+                    {{ l.label | translate }}
+                </a>
+        </div>
+        <div class="flex flex-col items-start gap-3">
+            <h2 class="font-display text-2xl text-gold mb-1">{{'footer.company'|translate}}</h2>
+            <a *ngFor="let l of company" [routerLink]="l.link" routerLinkActive="text-gold"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="relative font-poppins capitalize font-normal text-sm xl:text-base whitespace-nowrap transition-colors duration-300">
+                {{ l.label | translate }}
+            </a>
+        </div>
+        <div class="flex flex-col items-start gap-3">
+            <h2 class="font-display text-2xl text-gold mb-1">{{'footer.support'|translate}}</h2>
+            <a *ngFor="let l of support" [routerLink]="l.link" routerLinkActive="text-gold"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="relative font-poppins capitalize font-normal text-sm xl:text-base whitespace-nowrap transition-colors duration-300">
+                {{ l.label | translate }}
+            </a>
+        </div>
+        <div class="flex flex-col items-start gap-5">
+            <h2 class="font-display text-2xl text-gold">
+                {{ 'footer.connect' | translate }}
+            </h2>
+            <p class="font-poppins text-sm md:text-base text-text-muted leading-relaxed max-w-xs">
+                {{ 'footer.connectText' | translate }}
+            </p>
+                <div class="flex items-center gap-4">
+                    <a href="#" aria-label="Facebook"
+                        class="w-10 h-10 border border-gold/30 flex items-center justify-center text-gold transition-all duration-300 hover:bg-gold hover:text-white">
+                        <i class="mdi mdi-facebook text-xl"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram"
+                        class="w-10 h-10 border border-gold/30 flex items-center justify-center text-gold transition-all duration-300 hover:bg-gold hover:text-white">
+                        <i class="mdi mdi-instagram text-xl"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube"
+                        class="w-10 h-10 border border-gold/30 flex items-center justify-center text-gold transition-all duration-300 hover:bg-gold hover:text-white">
+                        <i class="mdi mdi-youtube text-xl"></i>
+                    </a>
+                </div>
+        </div>
+    </div>
+    <div class="w-full mt-10 py-5 border-t border-gold/20 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-3 text-center sm:text-start">
+        <p class="font-poppins text-sm text-text-muted">
+            © {{ currentYear }} Aurelis. All rights reserved.
+        </p>
+
+        <p class="font-poppins text-sm text-text-muted">
+            Timeless elegance. Every moment.
+        </p>
+    </div>
+</footer>

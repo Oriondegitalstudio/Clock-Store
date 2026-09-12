@@ -1,0 +1,57 @@
+<div class="w-full" [class.text-left]="align() === 'left'" [class.text-center]="align() === 'center'">
+
+    <div class="flex flex-col gap-6
+           lg:flex-row lg:items-end lg:justify-between">
+
+        <!-- Title -->
+        <div>
+
+            @if (eyebrow()) {
+            <span class="mb-3 block
+                 font-poppins text-[11px] font-medium
+                 uppercase tracking-[0.22em]
+                 text-gold">
+                {{ eyebrow() }}
+            </span>
+            }
+
+            <h2 class="font-display text-4xl font-medium
+               leading-tight tracking-[-0.02em]
+               text-text sm:text-5xl">
+                {{ title() }}
+            </h2>
+
+            @if (description()) {
+            <p class="mt-4 max-w-xl
+                 font-sans text-sm leading-7
+                 text-text-muted" [class.mx-auto]="align() === 'center'">
+                {{ description() }}
+            </p>
+            }
+
+        </div>
+
+        <!-- Action -->
+        @if (actionLabel()) {
+        <button type="button" (click)="onActionClick()" class="group inline-flex shrink-0
+               items-center gap-2
+               border-b border-gold
+               pb-1
+               font-poppins text-[11px]
+               font-medium uppercase
+               tracking-[0.12em]
+               text-text
+               transition-colors duration-300
+               hover:text-gold">
+            {{ actionLabel() }}
+
+            <span class="transition-transform duration-300
+                 group-hover:translate-x-1">
+                →
+            </span>
+        </button>
+        }
+
+    </div>
+
+</div>

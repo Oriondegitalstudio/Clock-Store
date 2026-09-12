@@ -1,1 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+    /* Fonts */
+    --font-sans: "Inter", sans-serif;
+    --font-display: "Playfair Display", serif;
+
+    /* Brand */
+    --color-black: #111111;
+    --color-white: #ffffff;
+    --color-gold: #c9a227;
+    --color-gold-light: #d8bd63;
+    --color-beige: #f5f1e8;
+    --color-beige-dark: #e8e0d0;
+
+    /* Text */
+    --color-text: #171717;
+    --color-text-muted: #6b6b6b;
+
+    /* Surfaces */
+    --color-background: #ffffff;
+    --color-surface: #f8f6f1;
+
+    /* Borders */
+    --color-border: #ded9ce;
+
+    /* Fonts */
+    --font-sans: "Inter", sans-serif;
+    --font-poppins: "Poppins",sans-serif;
+    --font-display: "Playfair Display", serif;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        margin: 0;
+        background-color: var(--color-background);
+        color: var(--color-text);
+        font-family: var(--font-sans);
+    }
+    h1,h2,h3,h4 {
+        font-family: var(--font-display);
+    }
+
+    button,input,textarea,select {
+        font-family: var(--font-sans);
+    }
+}
