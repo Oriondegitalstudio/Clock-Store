@@ -1,0 +1,28 @@
+<section class="relative w-full flex flex-col items-center gap-5 bg-white overflow-hidden px-6 lg:px-16 py-16">
+        <div class="w-full flex items-center justify-between">
+            <app-custom-title [eyebrow]="'home.collection.eyebrow'|translate" [title]="'home.collection.title'|translate" align="start" titleSize="md" />
+            <div class="flex flex-wrap items-center gap-4 mt-8 cursor-pointer">
+                <app-custom-button [label]="'home.collection.btn'|translate" variant="primary" size="lg" [fullWidth]="true"
+                    routerLink="/collections"></app-custom-button>
+            </div>
+        </div>
+        @if (ProductList.length > 0) {
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            @for (product of ProductList; track product.id) {
+            <app-product-card [product]="product"></app-product-card>
+            }
+        </div>
+        } @else {
+        <div class="w-full flex flex-col items-center justify-center py-16 text-center">
+            <p class="text-sm uppercase tracking-[0.2em] text-gold font-poppins">
+                Coming Soon
+            </p>
+            <h3 class="mt-3 font-display font-medium leading-[1.05] tracking-wider text-text text-3xl uppercase">
+                No timepieces available
+            </h3>
+            <p class="mt-2 text-sm text-black/50 font-sans">
+                Our collection is being carefully curated. Please check back soon.
+            </p>
+        </div>
+        }
+</section>

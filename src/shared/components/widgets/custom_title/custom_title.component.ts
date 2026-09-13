@@ -11,7 +11,7 @@ export class CustomTitleComponent {
   title = input.required<string>();
   description = input<string>('');
 
-  align = input<'left' | 'center'>('center');
+  align = input<'start' | 'center'>('center');
 
   titleSize = input<'sm' | 'md' | 'lg' | 'xl'>('lg');
 

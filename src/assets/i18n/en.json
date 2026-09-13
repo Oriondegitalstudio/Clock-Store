@@ -25,5 +25,19 @@
     "connect": "Connect",
     "connectText": "Follow Aurelis and discover our latest timepieces and collections.",
     "language": "Language"
+  },
+    "home":{
+      "hero":{
+        "eyebrow":"THE ART OF TIME",
+        "title":"Timeless Precision",
+        "description":"Discover exceptional timepieces where refined design, Swiss-inspired precision, and enduring craftsmanship come together to define the art of modern horology.",
+        "button":"Explore collections",
+        "span":"Precision · Heritage · Elegance"
+      },
+      "collection":{
+        "title":"THE AURELIS COLLECTION",
+        "eyebrow":"Defined by precision. Created to endure.",
+        "btn":"explore now"
+      }
   }
 }
