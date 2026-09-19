@@ -25,5 +25,20 @@
     "connect": "Suivez-nous",
     "connectText": "Suivez Aurelis et découvrez nos dernières pièces et collections.",
     "language": "Langue"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "L’ART DU TEMPS",
+      "title": "La Précision Intemporelle",
+      "description": "Découvrez des garde-temps d’exception où design raffiné, précision d’inspiration suisse et savoir-faire durable s’unissent pour révéler l’art de l’horlogerie moderne.",
+      "button": "Explorer les collections",
+      "span": "Précision · Héritage · Élégance"
+    },
+    "collection": {
+      "title": "LA COLLECTION AURELIS",
+      "eyebrow": "Définie par la précision. Conçue pour durer.",
+      "btn": "voir plus"
+    }
+
   }
 }
